@@ -1,0 +1,14 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 250px;
+    background-color: #d8af6c; 
+    text-align: center;
+    cursor: pointer; /* Mostra che è cliccabile */
+}

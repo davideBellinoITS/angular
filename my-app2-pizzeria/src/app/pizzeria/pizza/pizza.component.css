@@ -1,0 +1,14 @@
+p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+img{
+    border-radius: 10px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+div{
+    margin-top: 60px;
+}

@@ -1,0 +1,5 @@
+<h1>Benvenuto, seleziona una delle nostre pizze</h1>
+
+<app-lista-pizza [pizze]="pizze"  (selectPizza)="onSelectPizza($event)"></app-lista-pizza>
+
+<app-pizza [pizzaObject]="pizzaSelezionata" ></app-pizza>
