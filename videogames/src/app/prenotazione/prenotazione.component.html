@@ -1,0 +1,31 @@
+<div class="sfondo">
+  <dialog open>
+    <!-- <form (ngSubmit)="onSubmit()"> -->
+    <form #form="ngForm" action="" (ngSubmit)="onSubmit(form)">
+      <h2>Prenota ora {{gameTitle}}</h2>
+      <div class="input-container">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" ngModel #nome="ngModel" name="nome" />
+      </div>
+      <div class="input-container">
+        <label for="cognome">Cognome</label>
+        <input type="text" class="form-control" id="cognome" ngModel #cognome="ngModel" name="cognome" />
+      </div>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" ngModel #email="ngModel" name="email" />
+      </div>
+      <div class="input-container">
+        <label for="indirizzo">indirizzo</label>
+        <input type="text" class="form-control" id="indirizzo" ngModel #indirizzo="ngModel" name="indirizzo" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Aggiungi</button>
+    </form>
+    <button class="btn btn-danger" (click)="closeModal()">Chiudi</button>
+
+
+
+
+  </dialog>
+</div>

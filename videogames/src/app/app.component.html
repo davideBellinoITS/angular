@@ -1,0 +1,23 @@
+
+ @if (isOpenBookingModal) {
+    <app-prenotazione [gameTitle]="gameTitle" (handleClose)="onClosed()" ></app-prenotazione>
+    }
+
+ @if (isOpenPurchaseModal) {
+    <app-acquistato [gameTitle]="gameTitle"  (handlePurchaseClose)="handlePurchase()" ></app-acquistato>
+    }
+
+    <h1>Videgames</h1>
+
+<div class="card-container">
+    @for (videogame of allVideogames; track $index) {
+    <div class="card" >
+        <!-- <app-videogame (openModal)="onSelectedGame($event)"  [videogame]="videogame"></app-videogame> -->
+        <app-videogame (onSelectedGame)="onSelectedGame($event)" (bookingOpen)="onClosed()" (purchaseOpen)="handlePurchase()"  [videogame]="videogame"></app-videogame>
+    </div>
+    }
+</div>
+
+
+
+<router-outlet></router-outlet>
